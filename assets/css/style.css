@@ -305,7 +305,7 @@ footer h2 {
     }
 
     header {
-        padding-bottom: 0;
+        padding: 0;
         justify-content: center;
         position: relative;
         background-position-y: 0;
@@ -324,7 +324,7 @@ footer h2 {
     header nav ul li a {
         padding: 5px 5px;
         font-weight: lighter;
-        font-size: 2.3vw;
+        font-size: 2.6vw;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -340,6 +340,7 @@ footer h2 {
 
     header nav ul li a {
         padding: 0 0 0 5px;
+        font-size: 3.5vw;
     }
      header nav {
          margin: 0;
