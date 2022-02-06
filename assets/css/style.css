@@ -94,14 +94,18 @@ header nav ul li a:hover {
 }
 
 .section-title {
+    padding-top: 75px;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
     font-size: 48px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border-bottom: 3px solid;
 }
+
+
+
 
 .intro p {
     text-align: center;
@@ -351,11 +355,11 @@ footer h2 {
     }
 
     .section-title {
-        width: 95%;
+        width: 80%;
     }
 
     .intro p {
-        width: 100%;
+        width: 90%;
     }
 
     .project {
