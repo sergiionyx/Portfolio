@@ -139,6 +139,13 @@ header nav ul li a:hover {
     aspect-ratio: 2 / 1;
 }
 
+.project img:hover {
+    position: relative;
+    left: -10%;
+    width: 120%;
+    height: auto;
+}
+
 .project-descr {
     line-height: 1.3;
     padding: 10px;
