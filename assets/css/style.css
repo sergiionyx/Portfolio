@@ -71,14 +71,9 @@ header nav ul li a:hover {
 }
 /*HEADER STYLES END*/
 
-section {
-    padding: 60px;
-}
-
-/*HERO STYLES START*/
-.hero {
+/*Background image STYLES START*/
+.bcgrnd-img {
     display: flex;
-    justify-content: right;
     flex-wrap: wrap;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -87,12 +82,12 @@ section {
     align-items: flex-start;
 }
 
-.hero-cta {
-    width: 45%;
+.subtitle {
+    width: 100%;
     text-align: right;
-    margin: 3.5%;
+    margin: 15% 3% 15% 0;
     color: rgba(227, 243, 6, 0.849);
-    font-size: 55px;
+    font-size: 25px;
     line-height: 1.2;
     font-style: italic;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -126,21 +121,21 @@ section {
     border-color: var(--tertiary-color);
 }
 
-  /*TRAINERS INFO*/
+  /*Projects INFO*/
 
-.trainer {
+.project {
     flex: 1;
     margin: 20px;
     background: var(--secondary-color);
     color: var(--primary-color);
 }
 
-.trainer img {
+.project img {
     width: 100%;
     aspect-ratio: 2 / 1;
 }
 
-.trainer-bio {
+.project-descr {
     line-height: 1.3;
     padding: 10px;
     text-align: center;
@@ -148,16 +143,16 @@ section {
     
 }
 
-.trainer-bio h3 {
+.project-descr h3 {
     font-size: 28px;
 }
 
-.trainer-bio h4 {
+.project-descr h4 {
     font-weight: lighter;
     font-size: 22px;
 }
 
-.trainers {
+.projects {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -166,7 +161,7 @@ section {
     padding: 0 150px 0 150px;
 }
 
-/*END TRAINERS INFO*/
+/*END projects INFO*/
 
 .text-left {
     text-align: left;
@@ -245,7 +240,7 @@ footer h2 {
 }
 
 /* BORDER RADIUS OF ALL FORMS */
-.trainers article, .trainers article img {
+.projects article, .projects article img {
     border-radius: 20px;
 }
 
@@ -257,6 +252,7 @@ footer h2 {
     }
 
     header h1 {
+        font-size: 33px;
         width: 100%;
         text-align: center;
     }
@@ -268,7 +264,8 @@ footer h2 {
     }
 
     header nav ul li a {
-        font-size: 20px;
+        font-size: 15px;
+        padding: 10px 5px;
     }
 
     footer h2, footer div {
@@ -276,20 +273,21 @@ footer h2 {
         width: 100%;
     }
 
-    .hero-cta, .hero-form {
+    .subtitle {
         width: 100%;
-    }
-
-    .hero-cta {
-        text-align: center;
+        text-align: right;
     }
 
     .section-title {
         width: 80%;
     }
 
-    .trainer {
-        flex: 0 70%;
+    .project {
+        flex: 0 100%;
+    }
+
+    .projects {
+        padding: 0 80px 0 80px;
     }
 
     .contact-info iframe {
@@ -299,34 +297,56 @@ footer h2 {
 
 @media screen and (max-width: 768px)  {
     section {
-        padding: 30px 15px;
+        padding: 0;
     }
 
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-    }
-
-    .step-info {
-        flex: 2 100%;
-        text-align: center;
+    header {
+        padding-bottom: 0;
         justify-content: center;
+        position: relative;
+        background-position-y: 0;
+    }
+        
+    .bcgrnd-img {
+        background-position-y: 0;
     }
 
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
+
+    .subtitle {
+        width: 50%;
+        margin: 10% 3% 10% 40%;
     }
 
-    .step-text {
-        flex: 100%;
+    header nav ul li a {
+        padding: 5px 5px;
+        font-weight: lighter;
+        font-size: 2.3vw;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
+
 }
-
 @media screen and (max-width: 575px) {
-    .hero-form button {
+    header {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+        background-position-y: 0;
+        height: fit-content;
+    }
+
+    header nav ul li a {
+        padding: 0 0 0 5px;
+    }
+     header nav {
+         margin: 0;
+     }
+        
+    .bcgrnd-img {
+        background-position-y: 0;
+    }
+
+
+    .bcgrnd-img-form button {
         width: 100%;
     }
 
@@ -338,7 +358,7 @@ footer h2 {
         width: 100%;
     }
 
-    .trainer {
+    .project {
         flex: 0 100%;
     }
 
@@ -353,4 +373,5 @@ footer h2 {
     .contact-form {
         order: 3;
     }
+
 }
